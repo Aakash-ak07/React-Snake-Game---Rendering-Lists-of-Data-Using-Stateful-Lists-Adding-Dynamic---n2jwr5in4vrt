@@ -1,7 +1,7 @@
-import React,{useRef} from 'react';
+import React, {useRef} from 'react';
 
 export default (props) => {
-const ref = useRef();
+  const ref = useRef();
 
   return (
     <div>
@@ -10,7 +10,9 @@ const ref = useRef();
           left:`${dot[0]}%`,
           top:`${dot[1]}%`
         };
-        <div className="snake-dot" ref= {ref} key={i} style={style}></div>
+        return(
+          <div className="snake-dot" ref= {ref} key={i} style={style}></div>
+        );
       })}
     </div>
   );
