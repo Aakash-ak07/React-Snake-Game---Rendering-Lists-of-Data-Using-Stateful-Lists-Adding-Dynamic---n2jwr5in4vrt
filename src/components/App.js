@@ -15,7 +15,10 @@ const initialState = {
   food: getRandomCoordinates(),
   speed: 200,
   direction: "RIGHT",
-  snakeDots: [ [0, 0], [2, 0] ]
+  snakeDots: [
+    [0, 0],
+    [2, 0]
+  ]
 };
 
 class App extends Component {
